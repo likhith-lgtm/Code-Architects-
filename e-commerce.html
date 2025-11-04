@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FIELD FARE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f7fcf4;}
+        header {background:#388e3c; color:#fff; padding:20px 0; text-align:center;}
+        nav {background:#224d24; color:#fff; padding:10px 0;}
+        nav a {color:#fff; margin:0 15px; text-decoration:none;}
+        section {margin:30px auto; max-width:900px; padding:20px; background:#fff;}
+        h2 {color:#388e3c;}
+        .products {display:flex; flex-wrap:wrap; gap:20px;}
+        .product-card {flex:1 1 200px; border:1px solid #ddd; border-radius:8px; background:#f9fff8; padding:15px;}
+        .product-card img {width:100%; border-radius:8px;}
+        .pricing {margin:20px 0;}
+        .logistics, .demand {margin:20px 0;}
+        .btn {background:#388e3c; color:#fff; border:none; padding:10px 20px; margin-top:10px; border-radius:4px; cursor:pointer;}
+        .insights {background:#e6f9e7; padding:15px; border-radius:8px;}
+        @media (max-width:600px){.products{flex-direction:column;}}
+    </style>
+</head>
+<body>
+<header>
+    <h1>FarmDirect Marketplace</h1>
+    <p>Connecting Farmers and Buyers Directly</p>
+</header>
+<nav>
+    <a href="#products">Produce</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#logistics">Logistics</a>
+    <a href="#demand">Crop Demand</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="products">
+    <h2>Available Produce</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Tomatoes">
+            <h3>Tomatoes</h3>
+            <p>Freshly picked, organic tomatoes from local farms.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Potatoes">
+            <h3>Potatoes</h3>
+            <p>High-quality potatoes sold directly by farmers.</p>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/150" alt="Carrots">
+            <h3>Carrots</h3>
+            <p>Crunchy and nutritious carrots, available now.</p>
+        </div>
+    </div>
+    <button class="btn">Browse All Produce</button>
+</section>
+
+<section id="pricing">
+    <h2>Fair Pricing</h2>
+    <div class="pricing">
+        <p>Prices are set directly by farmers, ensuring fairness and transparency. No hidden charges or middlemen commissions.</p>
+        <ul>
+            <li>Tomatoes: $1.50/kg</li>
+            <li>Potatoes: $1.00/kg</li>
+            <li>Carrots: $1.20/kg</li>
+        </ul>
+    </div>
+</section>
+
+<section id="logistics">
+    <h2>Integrated Logistics Support</h2>
+    <div class="logistics">
+        <p>Our platform partners with local transporters for prompt pickup and delivery of produce, ensuring freshness and timely arrival.</p>
+        <p>Track your orders and shipment status from farm to doorstep.</p>
+        <button class="btn">Track My Order</button>
+    </div>
+</section>
+
+<section id="demand">
+    <h2>Real-Time Crop Demand Insights</h2>
+    <div class="insights">
+        <p><strong>Today's Trending Crops:</strong></p>
+        <ul>
+            <li>Tomatoes – High Demand 🔥</li>
+            <li>Onions – Moderate Demand</li>
+            <li>Broccoli – Increasing Demand</li>
+        </ul>
+        <p>These insights are updated live based on buyer activity and market data.</p>
+        <button class="btn">See More Insights</button>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="msg">Message:</label><br>
+        <textarea id="msg" name="msg"></textarea><br><br>
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer style="background:#224d24; color:#fff; text-align:center; padding:15px 0;">
+    <p>&copy; 2025 FarmDirect Marketplace. Empowering Farmers. Supporting Communities.</p>
+</footer>
+</body>
+</html>
